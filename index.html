@@ -5,567 +5,492 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sanjai Portfolio</title>
+    <title>Sanjai Portfolio | cybersecurity Researcher</title>
+    <meta name="description"
+        content="Sanjai - Founder of BinaryShield Technology, Cybersecurity Researcher, VAPT Consultant & Red Teamer">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
-            // Initialize EmailJS with the public key
-            emailjs.init("aEdbXaUrefSaC4JWZ");  // Replace with your actual public key
+            emailjs.init("aEdbXaUrefSaC4JWZ");
         })();
     </script>
 </head>
 
 <body>
     <!-- Scroll Button -->
-    <div class="scroll-up-btn">
-        <i class="fas fa-angle-double-up"></i>
+    <div class="scroll-up-btn" id="scrollUpBtn">
+        <i class="fas fa-chevron-up"></i>
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar">
-        <div class="max-width">
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
             <div class="logo">
-                <a href="#">Portfo<span>lio</span></a>
+                <a href="#home">Say <span>Hi..!👋</span></a>
             </div>
-            <ul class="menu">
+            <ul class="menu" id="navMenu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
                 <li><a href="#skills" class="menu-btn">Skills</a></li>
                 <li><a href="#projects" class="menu-btn">Projects</a></li>
-                <li><a href="#Experience" class="menu-btn">Experience</a></li>
-                <li><a href="#Certificate" class="menu-btn">Certificate</a></li>
-                <li><a href="#Achievement" class="menu-btn">Achievement</a></li>
+                <li><a href="#experience" class="menu-btn">Experience</a></li>
+                <li><a href="#certificate" class="menu-btn">Certificate</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
-            <div class="menu-btn">
+            <div class="menu-toggle" id="menuToggle">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">Hello 👋 This is</div>
-                <div class="text-2">sanjai </div>
-                <div class="text-3">And I'm a <span class="typing"></span></div>
-                <a href="mailto:sanjai0070@gmail.com" target="_blank">Hire Me<i
-                        class="fas fa-angle-right"></i></a>
-                <a href="assets/sanjai_resume.pdf" download="sanjai_resume">Download CV <i
-                        class="fas fa-angle-right"></i></a>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Floating orbit icons -->
+        <div class="orbit-container">
+            <div class="orbit-icon orbit-1"><i class="fas fa-lock"></i></div>
+            <div class="orbit-icon orbit-2"><i class="fas fa-user-shield"></i></div>
+            <div class="orbit-icon orbit-3"><i class="fas fa-bug"></i></div>
+            <div class="orbit-icon orbit-4"><i class="fas fa-terminal"></i></div>
+            <div class="orbit-icon orbit-5"><i class="fas fa-eye"></i></div>
+            <div class="orbit-icon orbit-6"><i class="fas fa-code"></i></div>
+            <div class="orbit-center">
+                <i class="fas fa-shield-alt"></i>
             </div>
         </div>
+        <div class="hero-content">
+            <h1>Hello, I'm Sanjai<br><span class="highlight-text">Breaking to Protect</span></h1>
+            <p class="hero-subtitle">Cybersecurity Researcher | VAPT Consultant | Red Teamer | Founder of BinaryShield —
+                Turning offensive security expertise into actionable defense for businesses worldwide.</p>
+            <div class="hero-buttons">
+                <a href="assets/sanjai_Resume.pdf" download="sanjai_resume" class="btn btn-primary"><i
+                        class="fas fa-download"></i> Resume</a>
+                <a href="mailto:sanjai0070@gmail.com" class="btn btn-secondary"><i class="fas fa-envelope"></i> Hire
+                    Me</a>
+            </div>
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Tools Built</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Certifications</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+                    <span class="stat-label">Passion</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-gradient-bottom"></div>
     </section>
 
     <!-- About Section -->
-    <section class="about" id="about">
-        <div class="max-width">
-            <div class="about-content">
-                <div class="left">
-                    <img src="img/sanjai(1).png" alt="sanjai">
-                    <div class="social-buttons">
-                        <div class="button1">
-                            <div class="icon">
-                                <a href="https://www.linkedin.com/in/sanjaimahalingam/" target="_blank"
-                                    rel="noreferrer">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                            <span>LinkedIn</span>
-                        </div>
-                        <div class="button1">
-                            <div class="icon">
-                                <a href="https://medium.com/@binaryshield.in" target="_blank" rel="noreferrer">
-                                    <i class="fab fa-medium"></i>
-                                </a>
-                            </div>
-                            <span>Medium</span>
-                        </div>
-                        <div class="button1">
-                            <div class="icon">
-                                <a href="https://github.com/binaryshield-in/" target="_blank" rel="noreferrer">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                            <span>GitHub</span>
-                        </div>
-                        
+    <section class="about-section" id="about">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">ABOUT ME</span>
+                <h2>Who I Am</h2>
+                <p class="section-subtitle">Founder of BinaryShield Technology & Consulting Pvt Ltd</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="img/sanjai(1).png" alt="Sanjai" loading="lazy">
+                    <div class="about-social">
+                        <a href="https://www.linkedin.com/in/sanjaimahalingam/" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://medium.com/@binaryshield.in" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-medium"></i></a>
+                        <a href="https://github.com/binaryshield-in/" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-github"></i></a>
                     </div>
                 </div>
-                <div class="right">
-                    <div class="text">I'm Sanjai, a <span class="typing2"></span></div>
-                    <p>I'm a <strong>Penetration Tester</strong> with practical experience in <strong>Web VAPT,</strong>
-                        vulnerability validation, and security reporting. I enjoy hands-on testing, understanding how systems fail, 
-                        and helping teams fix security issues effectively.</p>
-                     <p>I also maintain <strong>BinaryShield</strong>, a non-profit initiative where 
-                        I build open-source security tools and practice real-world testing. I’m looking to grow in a professional cybersecurity 
-                        environment and contribute to impactful security work..</p>
+                <div class="about-text">
+                    <h3>I'm Sanjai, a <span class="typing2"></span></h3>
+                    <p>A passionate <strong>Cybersecurity Professional</strong> and <strong>Founder of BinaryShield
+                            Technology & Consulting Pvt Ltd</strong>. With hands-on expertise in <strong>Vulnerability
+                            Assessment, Penetration Testing (VAPT), Red Teaming,</strong> and <strong>OSINT</strong>, I
+                        help organizations identify and eliminate security risks before attackers can exploit them.</p>
+                    <p>I've built <strong>AI-powered security tools</strong>, conducted security audits across web
+                        applications and networks, and hold certifications including <strong>Red Team CPT</strong> and
+                        <strong>Cisco Networking</strong>. I'm driven by a mission to make the digital world safer — one
+                        vulnerability at a time.
+                    </p>
+                    <div class="about-cta">
+                        <a href="https://www.binaryshield.in" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-primary"><i class="fas fa-building"></i> Visit Company</a>
+                        <a href="assets/sanjai_Resume.pdf" download="sanjai_resume" class="btn btn-secondary"><i
+                                class="fas fa-download"></i> Download CV</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section class="skills" id="skills">
-        <div class="main-container">
-            <h1 class="header-title fade-in">My Skills</h1>
-            <section class="abilities" id="abilities">
-                <div class="max-container">
-
-                     
-                    <!-- technical Skill Section -->
-                    <div class="abilities-content">
-                        <div class="category">
-                            <div class="category-title">> Technical Skills</div>
-                            <ul class="tools-list-horizontal">
-                                <li>vulnerability Assessments</li>
-                                <li>Web Application Penetration Testing (OWASP, CVSS)</li>
-                                <li>Manual Exploitation & Validation Testing</li>
-                                <li>Network Security & Protocol Analysis</li>
-                                <li>OSINT & Recon Frameworks</li>
-                                <li>Vulnerability Reporting</li>
-                                <li>CVSS Scoring</li>
-                                <li>Python Scripting</li>
-                                <li>AI Prompt Engineering for Cyber Automation</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Cybersecurity Tools Section -->
-                    <div class="abilities-content">
-                        <div class="category">
-                            <div class="category-title">> Tools</div>
-                            <ul class="tools-list-horizontal">
-                                <li>Burpsuite</li>
-                                <li>Nessus</li>
-                                <li>Metasploit</li>
-                                <li>Nmap</li>
-                                <li>GitHub-based Offensive Tools</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Systems and Languages Section -->
-                    <div class="abilities-content">
-                        <div class="category">
-                            <div class="category-title">> Systems and Languages</div>
-                            <div class="icons-container">
-                                <div class="icon-box">
-                                    <i class="fab fa-windows"></i>
-                                    <span>Windows</span>
-                                </div>
-                                <div class="icon-box">
-                                    <i class="fab fa-drogen"></i>
-                                    <span>Kali Linux</span>
-                                </div>
-                                <div class="icon-box">
-                                    <i class="fas fa-desktop"></i>
-                                    <span>VMware</span>
-                                </div>
-                              
-                                <div class="icon-box">
-                                    <i class="fab fa-python"></i>
-                                    <span>Python</span>
-                                </div>
-                                <!-- <div class="icon-box">
-                                    <i class="fab fa-js-square"></i>
-                                    <span>JavaScript</span>
-                            </div> -->
-                        </div>
+    <section class="skills-section" id="skills">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">EXPERTISE</span>
+                <h2>My Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category-card">
+                    <div class="skill-cat-icon"><i class="fas fa-crosshairs"></i></div>
+                    <h3>> Technical Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Vulnerability Assessments</span>
+                        <span class="skill-tag">Web App Pentesting (OWASP, CVSS)</span>
+                        <span class="skill-tag">Manual Exploitation & Validation</span>
+                        <span class="skill-tag">Network Security & Protocol Analysis</span>
+                        <span class="skill-tag">OSINT & Recon Frameworks</span>
+                        <span class="skill-tag">Vulnerability Reporting</span>
+                        <span class="skill-tag">CVSS Scoring</span>
+                        <span class="skill-tag">Python Scripting</span>
+                        <span class="skill-tag">AI Prompt Engineering</span>
                     </div>
                 </div>
-
-                <!-- Soft Skills Section -->
-                <div class="personal-skills">
-                    <h2>> Soft Skills</h2>
-                    <div class="skill-cards">
-                        <div class="soft-skill-card">
-                            <i class="fas fa-lightbulb soft-icon"></i> Problem-solving
-                        </div>
-                        <div class="soft-skill-card">
-                            <i class="fas fa-brain soft-icon"></i>Analytical & Critical Thinking
-
-                        </div>
-                        <div class="soft-skill-card">
-                            <i class="fas fa-users soft-icon"></i> Team Collaboration
-                        </div>
-                        <div class="soft-skill-card">
-                            <i class="fas fa-user-shield soft-icon"></i> Leadership
-                        </div>
-                        <div class="soft-skill-card">
-                            <i class="fas fa-comments soft-icon"></i> Communication
-                        </div>
+                <div class="skill-category-card">
+                    <div class="skill-cat-icon"><i class="fas fa-tools"></i></div>
+                    <h3>> Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Burpsuite</span>
+                        <span class="skill-tag">Nessus</span>
+                        <span class="skill-tag">Metasploit</span>
+                        <span class="skill-tag">Nmap</span>
+                        <span class="skill-tag">GitHub Offensive Tools</span>
                     </div>
                 </div>
-            </section>
+                <div class="skill-category-card">
+                    <div class="skill-cat-icon"><i class="fas fa-desktop"></i></div>
+                    <h3>> Systems & Languages</h3>
+                    <div class="skill-icons-row">
+                        <div class="sys-icon"><i class="fab fa-windows"></i><span>Windows</span></div>
+                        <div class="sys-icon"><i class="fab fa-linux"></i><span>Kali Linux</span></div>
+                        <div class="sys-icon"><i class="fas fa-desktop"></i><span>VMware</span></div>
+                        <div class="sys-icon"><i class="fab fa-python"></i><span>Python</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="soft-skills-row">
+                <div class="soft-skill-chip"><i class="fas fa-lightbulb"></i> Problem-solving</div>
+                <div class="soft-skill-chip"><i class="fas fa-brain"></i> Analytical & Critical Thinking</div>
+                <div class="soft-skill-chip"><i class="fas fa-users"></i> Team Collaboration</div>
+                <div class="soft-skill-chip"><i class="fas fa-user-shield"></i> Leadership</div>
+                <div class="soft-skill-chip"><i class="fas fa-comments"></i> Communication</div>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <div class="max-width">
-            <h2 class="title fadein">My Projects</h2>
-            <div class="carousel owl-carousel">
-                <div class="card">
-                    <a href="https://github.com/binaryshield-in/God_eye" target="_blank" rel="noreferrer"
-                        title="God_eye">
-                        <div class="box">
-                            <img src="./img/god_eye.jpg" alt="God_eye">
+    <section class="innovations-section" id="projects">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">PORTFOLIO</span>
+                <h2>My Projects</h2>
+                <p class="section-subtitle">Self-built security tools that showcase my problem-solving and development
+                    skills</p>
+            </div>
+            <div class="innovations-grid">
+                <div class="innovation-card">
+                    <div class="innovation-icon"><i class="fas fa-eye"></i></div>
+                    <h3>God Eye</h3>
+                    <p>Developed an <strong>AI-powered OSINT framework</strong> to automate reconnaissance,
+                        digital footprint analysis, and data correlation.</p>
+                    <a href="https://github.com/binaryshield-in/God_eye" target="_blank" class="innovation-link">Explore
+                        <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="innovation-card">
+                    <span class="coming-soon-badge">COMING SOON</span>
+                    <div class="innovation-icon"><i class="fas fa-code"></i></div>
+                    <h3>AI Code Audit</h3>
+                    <p>An intelligent <strong>source code analysis tool</strong> powered by AI to detect vulnerabilities
+                        and security flaws in your codebase.</p>
+                </div>
+                <div class="innovation-card">
+                    <span class="coming-soon-badge">COMING SOON</span>
+                    <div class="innovation-icon"><i class="fas fa-robot"></i></div>
+                    <h3>AI Web VAPT</h3>
+                    <p>An automated <strong>web application vulnerability assessment</strong> and penetration testing
+                        tool powered by machine learning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section class="workflow-section" id="workflow">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">MY WORKFLOW</span>
+                <h2>How I Secure Your Assets</h2>
+                <p class="section-subtitle">My proven 5-step methodology to identify and neutralize threats</p>
+            </div>
+            <div class="workflow-layout">
+                <!-- Terminal -->
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
                         </div>
-                    </a>
-                    <a href="https://github.com/binaryshield-in/God_eye" target="_blank" rel="noreferrer"
-                        title="LogSight-Defender Github Repository">
-                        <p>God_eye</p>
-                    </a>
-                    <p>Python</p>
+                        <span class="terminal-title">bash -- offensive-security</span>
+                        <div class="terminal-badge"><i class="fas fa-user-secret"></i> RED TEAM</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="term-line"><span class="term-prompt">root@sanjai:~#</span> <span
+                                class="term-cmd">initializing_protocols...</span></div>
+                        <div class="term-line"><span class="term-ok">[OK]</span> Target Scope Acquired</div>
+                        <div class="term-line"><span class="term-ok">[OK]</span> Vulnerability Scanner: COMPLETE</div>
+                        <div class="term-line"><span class="term-warn">[WARN]</span> 3 Critical Threats Found</div>
+                        <div class="term-line"><span class="term-prompt">root@sanjai:~#</span> <span
+                                class="term-cmd">deploying_defense_matrix.sh</span></div>
+                        <div class="term-line"><span class="term-ok">[OK]</span> Remediation Patches Applied</div>
+                        <div class="term-line"><span class="term-prompt">root@sanjai:~#</span> <span
+                                class="term-cursor">█</span></div>
+                    </div>
                 </div>
 
-
-                <div class="card">
-                    <a href="https://github.com/binaryshield-in/" target="_blank" rel="noreferrer"
-                        title="AI_code_audit">
-                        <div class="box">
-                            <img src="./img/source_code.jpg" alt="AI_code_audit">
+                <!-- Timeline -->
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-number">01</div>
+                        <div class="timeline-content">
+                            <h3>Discovery</h3>
+                            <p>I understand your infrastructure, assets, and threat landscape through detailed
+                                scoping calls.</p>
                         </div>
-                    </a>
-                    <a href="https://github.com/binaryshield-in/" target="_blank" rel="noreferrer"
-                        title="AI_code_audit Github Repository">
-                        <p>AI_code_audit</p>
-                    </a>
-                    <p>Python</p>
-                </div>
-                <div class="card">
-                    <a href="https://github.com/binaryshield-in/" target="_blank" rel="noreferrer"
-                        title="ai_vapt">
-                        <div class="box">
-                            <img src="./img/ai_vapt.jpg" alt="AI_VAPT">
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">02</div>
+                        <div class="timeline-content">
+                            <h3>Reconnaissance</h3>
+                            <p>My AI-powered OSINT tools map your digital footprint and identify potential attack
+                                surfaces.</p>
                         </div>
-                    </a>
-                    <a href="https://github.com/binaryshield-in/" target="_blank" rel="noreferrer"
-                        title="ai_vapt Github Repository">
-                        <p> AI Web VAPT still working</p>
-                    </a>
-                    <p>Python</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">03</div>
+                        <div class="timeline-content">
+                            <h3>Manual-Led Testing</h3>
+                            <p>Expert penetration testers manually validate and exploit vulnerabilities beyond automated
+                                scans.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">04</div>
+                        <div class="timeline-content">
+                            <h3>Reporting</h3>
+                            <p>Comprehensive reports with CVSS scores, PoC exploits, and remediation guidance.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-number">05</div>
+                        <div class="timeline-content">
+                            <h3>Remediation Support</h3>
+                            <p>Post-assessment support to fix vulnerabilities and verify patches are effective.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section class="certificate-section" id="Experience">
-        <h2>Experience Section</h2>
-        <div class="certificate-container">
-            <div class="certificate-entry">
-                <h3>Founder & Offensive Security Researcher</h3>
-                <p>Binary Shield Cybersecurity Solutions | Present</p>
-                <a href="https://binaryshield"
-                    target="_blank" class="certificate-link">On Going</a>
+    <section class="experience-section" id="experience">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">CAREER</span>
+                <h2>Experience</h2>
             </div>
-            
-            <div class="certificate-entry">
-                <h3>Penetration Tester Intern</h3>
-                <p>TwinTech Solutions, Chennai | Feb 2025 – May 2025</p>
-                <a href="assets/Experience Letter Sanjai Mahalingam.pdf"
-                    target="_blank" class="certificate-link">View Certificate</a>
-            </div>
-            <div class="certificate-entry">
-                <h3>Cybersecurity Intern </h3>
-                <p> Gateway software solution | Jun 2023 - Jul 2023</p>
-                <a href="assets/gateway_intern.pdf"
-                    target="_blank" class="certificate-link">View Certificate</a>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="exp-icon"><i class="fas fa-crown"></i></div>
+                    <h3>Founder & CEO</h3>
+                    <p class="exp-company">BinaryShield Technology and Consulting Pvt Ltd | Present</p>
+                    <p class="exp-desc">Leading a cybersecurity startup delivering VAPT, Red Team assessments, and
+                        AI-powered security solutions to clients. Built and deployed proprietary tools including God Eye
+                        (OSINT framework).</p>
+                    <a href="https://www.binaryshield.in" target="_blank" class="exp-link"
+                        rel="noopener noreferrer">Visit Company <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="experience-card">
+                    <div class="exp-icon"><i class="fas fa-user-secret"></i></div>
+                    <h3>Penetration Tester Intern</h3>
+                    <p class="exp-company">TwinTech Solutions, Chennai | Feb 2025 – May 2025</p>
+                    <p class="exp-desc">Performed web application and network penetration tests using Burp Suite, Nmap,
+                        and Metasploit. Identified critical vulnerabilities and delivered detailed reports with
+                        remediation steps.</p>
+                    <a href="assets/Experience Letter Sanjai Mahalingam.pdf" target="_blank" class="exp-link">View
+                        Certificate <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="experience-card">
+                    <div class="exp-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Cybersecurity Intern</h3>
+                    <p class="exp-company">Gateway Software Solution | Jun 2023 - Jul 2023</p>
+                    <p class="exp-desc">Gained foundational exposure to network security, vulnerability scanning, and
+                        security best practices in a professional environment.</p>
+                    <a href="assets/gateway_intern.pdf" target="_blank" class="exp-link">View Certificate <i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Certificates Section -->
-    <section class="certificates-wrapper" id="Certificate">
-        <h2>Certificate Section</h2>
-        <div class="scrollable-area" id="scrollable-area-certificates">
-            <div class="certification-card">
-                <h3>Certified Penetration Tester (CPT)</h3>
-                <a href="assets/RedTeam-CPT-Certificate.pdf"
-                    target="_blank" class="view-certificate-link">View Certificate</a>
+    <section class="certs-section" id="certificate">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">CREDENTIALS</span>
+                <h2>Certifications</h2>
             </div>
-            <div class="certification-card">
-                <h3>Cisco Networking basic</h3>
-                <a href="assets/Networking_Basics_Badge20241128-27-zrj04r.pdf" target="_blank" class="view-certificate-link">View
-                    Certificate</a>
+            <div class="certs-scroll" id="scrollable-area-certificates">
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>Certified Penetration Tester (CPT)</h3>
+                    <a href="assets/RedTeam-CPT-Certificate.pdf" target="_blank" class="cert-link">View Certificate <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Cisco Networking Basic</h3>
+                    <a href="assets/Networking_Basics_Badge20241128-27-zrj04r.pdf" target="_blank"
+                        class="cert-link">View Certificate <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>Deloitte Virtual Intern</h3>
+                    <a href="assets/deloitte_certificate.pdf" target="_blank" class="cert-link">View Certificate <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Cybersecurity Workshop</h3>
+                    <a href="assets/workshop_certificate.pdf" target="_blank" class="cert-link">View Certificate <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-award"></i></div>
+                    <h3>Intern Experience</h3>
+                    <a href="assets/experience_letter.pdf" target="_blank" class="cert-link">View Certificate <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
-            <div class="certification-card">
-                <h3>Delotti virtual Intern</h3>
-                <a href="assets/deloitte_certificate.pdf" target="_blank"
-                    class="view-certificate-link">View Certificate</a>
-            </div>
-            <div class="certification-card">
-                <h3>cybersecurity workshop</h3>
-                <a href="assets/cybersecurity_workshop.pdf" target="_blank"
-                    class="view-certificate-link">View Certificate</a>
-            </div>
-             <div class="certification-card">
-                <h3>Intern experience</h3>
-                <a href="assets/intern_experience.pdf" target="_blank"
-                    class="view-certificate-link">View Certificate</a>
-            </div> 
-        </div>
-        <div class="indicator-dots">
-            <div class="indicator"></div>
-            <div class="indicator"></div>
-            <div class="indicator"></div>
         </div>
     </section>
 
- <!-- Achievement Section -->
-
-    <section class="certificates-wrapper" id="Achievenment">
-        <h2>Achievement Section</h2>
-        <div class="scrollable-area" id="scrollable-area-achievements">
-            <div class="certification-card">
-                <h3>Computer Department Secretary</h3>
-                <a href=""
-                    target="_blank" class="view-certificate-link">View Certificate</a>
+    <!-- Achievement Section -->
+    <section class="certs-section" id="achievement">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">MILESTONES</span>
+                <h2>Achievements</h2>
             </div>
-            <div class="certification-card">
-                <h3>Debugging</h3>
-                <a href="assets/debugging certificate.pdf" target="_blank"
-                    class="view-certificate-link">View Certificate</a>
+            <div class="certs-scroll" id="scrollable-area-achievements">
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-star"></i></div>
+                    <h3>Computer Department Secretary</h3>
+                    <a href="" target="_blank" class="cert-link">View Certificate <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fas fa-bug"></i></div>
+                    <h3>Debugging</h3>
+                    <a href="assets/debugging_certificate.pdf" target="_blank" class="cert-link">View Certificate <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
-            <!-- <div class="certification-card">
-                <h3>Team Captain of 𝐇𝟒𝐱𝟎𝐫_𝐇𝐮𝐧𝐭𝐞𝐫𝐬, leading the team to 49th place in IRON CTF 2024
-                    (out of 1,033
-                    teams)</h3>
-                <a href="https://drive.google.com/file/d/1eIJdPe6yqnw0KUYWTR1DyYPsbmB-z9PD/view?usp=sharing"
-                    target="_blank" class="view-certificate-link">View Certificate</a>
-            </div>
-            <div class="certification-card">
-                <h3>Excited to secure 69th place out of 574 participants in the Cybergenix Security Certificate of Achievement.
-                </h3>
-                <a href="https://drive.google.com/file/d/14FGJLg96X8iaEbQ71Y9OH4CQ9op-HG0V/view?usp=sharing"
-                    target="_blank" class="view-certificate-link">View Certificate</a>
-            </div>
-            <div class="certification-card">
-                <h3>Achieved 14th place in EnigmaXplore 2.0 2024 with team H4xor_Hunters among over 230 participants</h3>
-                <a href="https://drive.google.com/file/d/1ZDTegg9lqzBgy8ZdXGwu45hXHac8fKFI/view?usp=sharing"
-                    target="_blank" class="view-certificate-link">View Certificate</a>
-            </div> -->
-        </div>
-        <div class="indicator-dots">
-            <div class="indicator"></div>
-            <div class="indicator"></div>
-            <div class="indicator"></div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title fadein">Contact me</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Reach Out to me!</div>
+    <section class="contact-section" id="contact">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">GET IN TOUCH</span>
+                <h2>Contact Me</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Reach Out to Me!</h3>
                     <p>Discuss a Project or just want to say Hi? My inbox is open for all.</p>
-                    <div class="icons">
-                        <div class="row">
+                    <div class="contact-details">
+                        <div class="contact-row">
                             <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">sanjai</div>
+                            <div>
+                                <strong>Name</strong>
+                                <span>Sanjai</span>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="contact-row">
                             <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">Namakkal, India</div>
+                            <div>
+                                <strong>Address</strong>
+                                <span>Namakkal, India</span>
                             </div>
                         </div>
-                        <div class="row">
-                            <i class="fas fa-envelope email-icon"></i>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title"><a href="mailto:sanjai0070@gmail.com"
-                                        target="_blank">sanjai0070@gmail.com</a></div>
+                        <div class="contact-row">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <span><a href="mailto:sanjai0070@gmail.com"
+                                        target="_blank">sanjai0070@gmail.com</a></span>
                             </div>
                         </div>
                     </div>
-                    <div class="text1">Stay Connected</div>
-                    <div>
-                        <div class="wrapper">
-                            <div class="button1">
-                                <div class="icon">
-                                    <a href="https://www.linkedin.com/in/sanjaimahalingam/" target="_blank"
-                                        rel="noreferrer">
-                                        <i class="fab fa-linkedin"></i>
-                                    </a>
-                                </div>
-                                <span style="color: black;">LinkedIn </span>
-                            </div>
-                            <div class="buttonmob">
-                                <div class="button1">
-                                    <div class="icon">
-                                        <a href="https://medium.com/@binaryshield.in" target="_blank" rel="noreferrer">
-                                            <i class="fab fa-medium"></i>
-                                        </a>
-                                    </div>
-                                    <span style="color: black;">Medium </span>
-                                </div>
-                            </div>
-                            <div class="buttonmob1"></div>
-                            <div class="button1">
-                                <div class="icon">
-                                    <a href="https://github.com/binaryshield-in/" target="_blank" rel="noreferrer">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                                <span style="color: black;">Github </span>
-                            </div>
-                            
-                            
-                        </div>
+                    <h4>Stay Connected</h4>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/sanjaimahalingam/" target="_blank"
+                            rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://medium.com/@binaryshield.in" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-medium"></i></a>
+                        <a href="https://github.com/binaryshield-in/" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-github"></i></a>
                     </div>
                 </div>
-                <div class="column right">
-                    <div class="text">Message me</div>
-                    <form action="#" onsubmit="sendEmail(event)" id="contactForm">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" name="user_name" required>
-                            </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Email" name="email_id" required>
-                            </div>
+                <div class="contact-form-wrapper">
+                    <h3>Message Me</h3>
+                    <form action="#" id="contactForm">
+                        <div class="form-row">
+                            <input type="text" placeholder="Name" name="user_name" required>
+                            <input type="email" placeholder="Email" name="email_id" required>
                         </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" name="subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Describe Project..." name="message" required></textarea>
-                        </div>
-                        <div class="button">
-                            <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
-                        </div>
+                        <input type="text" placeholder="Subject" name="subject" required>
+                        <textarea rows="6" placeholder="Describe Project..." name="message" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message <i
+                                class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact section end -->
-    <!-- footer section start -->
+    <!-- Footer -->
     <footer>
-        <span>Created By <a href="https://www.linkedin.com/in/sanjaimahalingam/" target="_blank"
-                rel="noreferrer">Sanjai</a> | <span class="far fa-copyright"></span> <span id="year"></span> All
-            rights reserved </span>
+        <div class="footer-content">
+            <!-- <div class="footer-brand">
+                <div class="logo-icon"><i class="fas fa-shield-alt"></i></div>
+                <span>sanjai</span>
+            </div> -->
+            <p>Created By <a href="https://www.linkedin.com/in/sanjaimahalingam/" target="_blank"
+                    rel="noopener noreferrer">Sanjai</a> | <span class="far fa-copyright"></span> <span
+                    id="year"></span>
+                All rights reserved</p>
+        </div>
     </footer>
 
-    <script>
-        function sendEmail(event) {
-            event.preventDefault();  // Prevents the default form submission
-        
-            // Send the form data to EmailJS
-            emailjs.sendForm("service_tj8gght", "template_ahh0jsl", "#contactForm")
-                .then(function(response) {
-                    alert("Email sent successfully!");
-                }, function(error) {
-                    alert("Failed to send email. Please try again.");
-                });
-        }
-        </script>
-    <!-- footer section end -->
     <script src="script.js" async></script>
-    <script>
-
-
-        // JavaScript for animations, waypoints, and other interactive elements
-        $(document).ready(function () {
-            // Typed.js for typing animation
-            $(".typing").typed({
-                strings: ["Cybersecurity Researcher", "VAPT Consultant", "Bug Bounty Hunter", "Open Source Contributor"],
-                typeSpeed: 100,
-                backSpeed: 80,
-                loop: true
-            });
-
-            // Waypoints for fade-in effect
-            $('.fadein').waypoint(function () {
-                $(this.element).addClass('animated fadeIn');
-            }, {
-                offset: '90%'
-            });
-
-            // Smooth scrolling for anchor links
-            $('a[href^="#"]').on('click', function (e) {
-                e.preventDefault();
-                var target = $(this.hash);
-                $('html, body').animate({
-                    scrollTop: target.offset().top
-                }, 500);
-            });
-
-            // Scroll to top button
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 100) {
-                    $('.scroll-up-btn').fadeIn();
-                } else {
-                    $('.scroll-up-btn').fadeOut();
-                }
-            });
-
-            $('.scroll-up-btn').click(function () {
-                $('html, body').animate({
-                    scrollTop: 0
-                }, 500);
-            });
-
-            // Menu toggle
-            $('.menu-btn').click(function () {
-                $('.navbar .menu').toggle();
-            });
-
-            // Dragging functionality for scrollable areas
-            const scrollableAreas = document.querySelectorAll('.scrollable-area');
-
-            scrollableAreas.forEach(scrollableArea => {
-                let isDragging = false;
-                let startX, scrollLeft;
-
-                scrollableArea.addEventListener('mousedown', (e) => {
-                    isDragging = true;
-                    scrollLeft = scrollableArea.scrollLeft;
-                    startX = e.pageX - scrollableArea.offsetLeft;
-                    scrollableArea.style.cursor = 'grabbing';
-                });
-
-                scrollableArea.addEventListener('mouseleave', () => {
-                    isDragging = false;
-                    scrollableArea.style.cursor = 'grab';
-                });
-
-                scrollableArea.addEventListener('mouseup', () => {
-                    isDragging = false;
-                    scrollableArea.style.cursor = 'grab';
-                });
-
-                scrollableArea.addEventListener('mousemove', (e) => {
-                    if (!isDragging) return;
-                    e.preventDefault();
-                    const x = e.pageX - scrollableArea.offsetLeft;
-                    const walk = (x - startX) * 2; //scroll-fast
-                    scrollableArea.scrollLeft = scrollLeft - walk;
-                });
-            });
-        });
-    </script>
-    <!-- External Javascript File end-->
 </body>
 
 </html>
-
